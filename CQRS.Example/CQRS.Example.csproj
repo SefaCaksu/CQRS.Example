@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.16" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Manual_CQRS\" />
+    <None Remove="MediatR_CQRS\" />
+    <None Remove="Models\" />
+    <None Remove="Manual_CQRS\Handlers\" />
+    <None Remove="Manual_CQRS\Commands\" />
+    <None Remove="Manual_CQRS\Commands\Requests\" />
+    <None Remove="Manual_CQRS\Commands\Responses\" />
+    <None Remove="Manual_CQRS\Queries\" />
+    <None Remove="Manual_CQRS\Queries\Requests\" />
+    <None Remove="Manual_CQRS\Queries\Responses\" />
+    <None Remove="MediatR_CQRS\Commands\" />
+    <None Remove="MediatR_CQRS\Handlers\" />
+    <None Remove="MediatR_CQRS\Queries\" />
+    <None Remove="MediatR_CQRS\Commands\Requests\" />
+    <None Remove="MediatR_CQRS\Commands\Responses\" />
+    <None Remove="Manual_CQRS\Handlers\CommandHandler\" />
+    <None Remove="Manual_CQRS\Handlers\QueryHandler\" />
+    <None Remove="MediatR_CQRS\Handlers\CommandHandler\" />
+    <None Remove="MediatR_CQRS\Handlers\QueryHandler\" />
+    <None Remove="MediatR_CQRS\Queries\Requests\" />
+    <None Remove="MediatR_CQRS\Queries\Responses\" />
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Manual_CQRS\" />
+    <Folder Include="MediatR_CQRS\" />
+    <Folder Include="Models\" />
+    <Folder Include="Manual_CQRS\Handlers\" />
+    <Folder Include="Manual_CQRS\Commands\" />
+    <Folder Include="Manual_CQRS\Commands\Requests\" />
+    <Folder Include="Manual_CQRS\Commands\Responses\" />
+    <Folder Include="Manual_CQRS\Queries\" />
+    <Folder Include="Manual_CQRS\Queries\Requests\" />
+    <Folder Include="Manual_CQRS\Queries\Responses\" />
+    <Folder Include="MediatR_CQRS\Commands\" />
+    <Folder Include="MediatR_CQRS\Handlers\" />
+    <Folder Include="MediatR_CQRS\Queries\" />
+    <Folder Include="MediatR_CQRS\Commands\Requests\" />
+    <Folder Include="MediatR_CQRS\Commands\Responses\" />
+    <Folder Include="Manual_CQRS\Handlers\CommandHandler\" />
+    <Folder Include="Manual_CQRS\Handlers\QueryHandler\" />
+    <Folder Include="MediatR_CQRS\Handlers\CommandHandler\" />
+    <Folder Include="MediatR_CQRS\Handlers\QueryHandler\" />
+    <Folder Include="MediatR_CQRS\Queries\Requests\" />
+    <Folder Include="MediatR_CQRS\Queries\Responses\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+</Project>
